@@ -69,9 +69,10 @@ def largest_factor(n):
     i = 2
     while i < n:
         if n % i == 0 : 
-            k = n / i 
-            return k
+            k = n / i
+            return int(k) 
         i += 1
+    return int(k)
 
 def hailstone(n):
     """Print the hailstone sequence starting at n and return its
