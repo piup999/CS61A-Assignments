@@ -94,13 +94,13 @@ def hailstone(n):
     1
     """
     "*** YOUR CODE HERE ***"
-    hailstone_list = []
-    while n > 1:
-        hailstone_list.append(int(n))
+    steps = 1
+    print(n)
+    while n != 1:
         if n % 2 == 0:
-            n = n / 2
+            n = n // 2
         else:
             n = 3 * n + 1
-    if n <= 1:
-        hailstone_list.append(int(n))
-    return hailstone_list, len(hailstone_list)
+        print(n)
+        steps += 1
+    return steps
